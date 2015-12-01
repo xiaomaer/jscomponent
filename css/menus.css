@@ -1,0 +1,208 @@
+/*顶部导航菜单*/
+body {
+    overflow-x: hidden; /*当浏览器调正的宽度小于页面宽度时，不显示横向滚动条*/
+    font-family: "microsoft yahei";
+}
+
+a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#header, .link {
+    height: 35px;
+}
+
+#header {
+    width: 100%;
+    background-color: #cc6688;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+/*响应式布局，当浏览器页面宽度小于等于顶部导航条指定宽度时，固定为指定宽度*/
+@media screen and (max-width: 880px) {
+    #header {
+        width: 880px;
+    }
+}
+
+#leftlist {
+    float: left;
+    margin-left: 100px;
+}
+
+#rightlist {
+    float: right;
+    margin-right: 100px;
+}
+
+.list > li {
+    float: left;
+    position: relative;
+}
+
+.link {
+    display: block;
+    padding: 0px 8px;
+    line-height: 35px;
+    color: white;
+}
+
+.link:hover {
+    color: black;
+}
+
+.haschild:hover .link {
+    background-color: white;
+    color: black;
+}
+
+/*显示下拉菜单*/
+.haschild:hover .showdetail {
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent gainsboro gainsboro gainsboro;
+}
+
+.showdetail {
+    position: absolute;
+    top: 35px;
+    left: -1px;
+    display: none;
+    background-color: white;
+}
+
+.item {
+    color: black;
+    display: block;
+    padding-left: 5px;
+    width: 75px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.item:hover {
+    background: gainsboro;
+}
+
+.biglist {
+    left: -643px;
+    width: 700px;
+    padding: 5px;
+}
+
+.listblock {
+    float: left;
+    width: 230px;
+}
+
+.shoptitle {
+    margin-left: 20px;
+    color: royalblue;
+}
+
+.listblock li {
+    float: left;
+    width: 75px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.items {
+    color: black;
+}
+
+.items:hover {
+    color: royalblue;
+}
+
+.centerblock {
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+/*内容部分*/
+#content {
+    width: 1192px;
+    height: 400px;
+    margin: 0px auto 10px auto;
+    overflow: hidden;
+    padding-top: 50px;
+}
+/*导航菜单+多级下拉菜单*/
+#shopmenus {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(39, 39, 39, 0.81);
+    margin-top: 20px;
+    text-align: center;
+}
+
+#smenus > li {
+    position: relative;
+    display: inline-block;
+    /*兼容IE6、7行内块级元素*/
+    *display: inline;;
+    *zoom: 1;
+
+}
+
+.smenu {
+    display: block;
+    width: 100px;
+    color: white;
+    font-size: 15px;
+}
+
+.smenu:hover {
+    background-color: crimson;
+}
+
+.hasmenu:hover .catalogs {
+    display: block;
+}
+
+.hasmenu:hover .smenu {
+    background-color: crimson;
+}
+
+.hasmenutwo:hover .twocatalog {
+    display: block;
+}
+
+.catalogs, .twocatalog {
+    position: absolute;
+    background-color: white;
+    display: none;
+    z-index: 50;
+}
+
+.catalogs {
+    top: 40px;
+    left: -1px;
+}
+
+.twocatalog {
+    top: 0px;
+    left: 142px;
+}
+
+.class {
+    display: block;
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    color: black;
+    padding-left: 10px;
+    text-align: left;
+    border: 1px solid #e4e4e4;
+    border-top: 0px;
+}
+
+.class:hover {
+    background-color: #e4e4e4;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件：轮播图（切换过程带动画效果）</title>
+    <link rel="stylesheet" href="css/resetcss.css"/>
+    <link rel="stylesheet" href="css/turnimg.css"/>
+</head>
+<body>
+<!--自写jq animate()实现动画无缝轮播图-->
+<div id="turnimg">
+    <ul id="imgs">
+        <li><a href="#"><img src="img/4.jpg"/></a></li>
+        <li><a href="#"><img src="img/1.jpg"/></a></li>
+        <li><a href="#"><img src="img/2.jpg"/></a></li>
+        <li><a href="#"><img src="img/3.jpg"/></a></li>
+        <li><a href="#"><img src="img/4.jpg"/></a></li>
+        <li><a href="#"><img src="img/1.jpg"/></a></li>
+    </ul>
+    <ul id="circles">
+        <li class="currimg" data-num="0"></li>
+        <li class="circle" data-num="1"></li>
+        <li class="circle" data-num="2"></li>
+        <li class="circle" data-num="3"></li>
+    </ul>
+    <div class="arr left" id="arrL">
+        <div id="leftarr"></div>
+    </div>
+    <div class="arr right" id="arrR">
+        <div id="rightarr"></div>
+    </div>
+</div>
+<script src="js/turnimg.js"></script>
+</body>
+</html>

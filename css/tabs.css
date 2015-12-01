@@ -1,0 +1,68 @@
+body {
+    overflow-x: hidden; /*当浏览器调正的宽度小于页面宽度时，不显示横向滚动条*/
+    font-family: "microsoft yahei";
+    font-size: 13px;
+}
+
+
+#tabs {
+    margin: 30px auto;
+    width: 307px;
+    height: 176px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #e4e4e4;
+}
+
+#tabs li {
+    float: left;
+}
+
+.tab {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 76px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;;
+}
+
+.border {
+    border-right: 1px solid #e4e4e4;
+}
+
+.tabctn {
+    width: 100%;
+    height: 156px;
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.activelink {
+    background-color: white;
+    border-bottom: 0px;
+}
+
+.tabctn p {
+    margin-top: 10px;
+    text-indent: 10px;
+    font-size: 13px;
+}
+
+/*#tabs li:hover .tab {
+    background-color: white;
+    border-bottom: 0px;
+}
+
+#tabs li:hover .tabctn {
+    display: block;
+}*/

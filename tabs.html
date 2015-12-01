@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件：选项卡</title>
+    <link rel="stylesheet" href="css/resetcss.css"/>
+    <link rel="stylesheet" href="css/tabs.css"/>
+</head>
+<body>
+<div id="tabs">
+    <ul>
+        <li><a href="#" class="tab border activelink">话费</a>
+
+            <div class="tabctn active">
+                <p><label for="tel">号码：</label><input type="text" id="tel"/></p>
+
+                <p><label for="money">面值：</label><select id="money">
+                    <option>100元</option>
+                    <option>50元</option>
+                    <option>30元</option>
+                    <option>20元</option>
+                    <option>10元</option>
+                </select></p>
+                <p>
+                    <button type="button">充值</button>
+                </p>
+            </div>
+        </li>
+        <li><a href="#" class="tab border">机票</a>
+
+            <div class="tabctn">
+                <p><label for="start">出发：</label><input type="text" id="start"/></p>
+
+                <p><label for="end">达到：</label><input type="text" id="end"/></p>
+
+                <p><label for="date">日期：</label><input type="datetime-local" id="date"/></p>
+
+                <p>
+                    <button type="button">查找</button>
+                </p>
+            </div>
+        </li>
+        <li><a href="#" class="tab border">电影</a>
+
+            <div class="tabctn">
+                <p><label for="film">电影名称：</label><input type="text" id="film"/></p>
+
+                <p><label for="fdate">日期：</label><input type="date" id="fdate"/></p>
+
+                <p><label for="ftime">时间：</label><input type="time" id="ftime"/></p>
+
+                <p>
+                    <button type="button">购买</button>
+                </p>
+            </div>
+        </li>
+        <li><a href="#" class="tab">旅游</a>
+
+            <div class="tabctn">
+                <p><label for="tourist ">景点名称：</label><input type="text" id="tourist "/></p>
+
+                <p><label for="traveldate">日期：</label><input type="date" id="traveldate"/></p>
+                <button type="button">购买</button>
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="js/tabs.js"></script>
+</body>
+</html>
