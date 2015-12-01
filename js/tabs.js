@@ -31,5 +31,5 @@ var tabs = function () {
         tabchange: tabschange
     }
 }();
-//鼠标悬浮列表项上时切换至对应选项卡
+//鼠标悬浮在选项卡上时切换显示对应选项卡及内容
 doc.getElementById("tabs").addEventListener("mouseover", tabs.tabchange, false);
