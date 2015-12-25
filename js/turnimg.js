@@ -1,9 +1,9 @@
 /**
  * Created by MMY on 2015/11/27.
  */
-var doc = document;
-//自写JQ animate()实现无缝动画轮播图。
+ //自写JQ animate()实现无缝动画轮播图。
 //注意：结合transition实现图片切换动画时无法实现无缝轮播图
+var doc = document;
 var horse = function () {
     var imgslist = doc.getElementById("imgs"),
         imgs = imgslist.getElementsByTagName("li"),
