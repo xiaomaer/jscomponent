@@ -2,7 +2,7 @@
  * Created by MMY on 2015/11/27.
  */
 var doc=document;
-//右侧切换选项卡显示不同的内容
+//切换选项卡显示不同的内容
 var tabs = function () {
     var tabs = doc.getElementsByClassName("tab"),
         tabctns = doc.getElementsByClassName("tabctn"),
