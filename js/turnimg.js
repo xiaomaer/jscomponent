@@ -36,14 +36,13 @@ var horse = function () {
 
     //动画切换下一张图片
     function nextImg() {
+         circles[j].className = "circle";
         if (varyleft <= totalwidth) {//显示最后一张时，瞬间切换到第二张
             imgslist.style.left = -imgwidth + "px";
             varyleft = -imgwidth;
-            circles[j].className = "circle";
             j++;
         }
         else {
-            circles[j].className = "circle";
             j++;
             if (j == 4) {
                 j = 0;
@@ -56,14 +55,13 @@ var horse = function () {
 
     //动画切换上一张图片
     function prevImg() {
+         circles[j].className = "circle";
         if (varyleft >= -imgwidth) {
             imgslist.style.left = totalwidth + "px";
             varyleft = totalwidth;
-            circles[j].className = "circle";
             j = 3;
         }
         else {
-            circles[j].className = "circle";
             j--;
             if (j < 0) {
                 j = 3;
