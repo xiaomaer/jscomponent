@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/turnimg.css"/>
 </head>
 <body>
-<!--自写jq animate()实现动画无缝轮播图-->
 <div id="turnimg">
+    <!--轮播图片-->
     <ul id="imgs">
         <li><a href="#"><img src="img/4.jpg"/></a></li>
         <li><a href="#"><img src="img/1.jpg"/></a></li>
@@ -17,12 +17,14 @@
         <li><a href="#"><img src="img/4.jpg"/></a></li>
         <li><a href="#"><img src="img/1.jpg"/></a></li>
     </ul>
+    <!--对应底部的圆点-->
     <ul id="circles">
         <li class="currimg" data-num="0"></li>
         <li class="circle" data-num="1"></li>
         <li class="circle" data-num="2"></li>
         <li class="circle" data-num="3"></li>
     </ul>
+    <!--左右切换箭头-->
     <div class="arr left" id="arrL">
         <div id="leftarr"></div>
     </div>
