@@ -1,0 +1,33 @@
+.tab{
+    width: 400px;
+    margin-top: 20px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.tab-menus{
+    padding-left: 20px;
+}
+.tab-menu{
+    float: left;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-bottom: none;
+    cursor: pointer;
+}
+.curr-menu{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.tab-contents{
+    clear: left;
+    padding: 5px;
+    border: 1px solid black;
+}
+.hidden{
+    display: none;
+}

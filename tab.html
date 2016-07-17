@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab选项卡</title>
+    <link rel="stylesheet" href="css/tab.css"/>
+</head>
+<body>
+<div class="tab">
+    <ul class="tab-menus">
+        <li class="tab-menu">menu1</li>
+        <li class="tab-menu">menu2</li>
+        <li class="tab-menu">menu3</li>
+        <li class="tab-menu">menu4</li>
+        <li class="tab-menu">menu5</li>
+    </ul>
+    <div class="tab-contents">
+        <div class="tab-content">
+            <ul>
+                <li>ctn1</li>
+                <li>ctn2</li>
+                <li>ctn3</li>
+            </ul>
+        </div>
+        <div class="tab-content hidden">
+            <h2>title</h2>
+            <p>content</p>
+        </div>
+        <div class="tab-content hidden">content3</div>
+        <div class="tab-content hidden">
+            <div>test</div>
+            <p>paragraph</p>
+        </div>
+        <div class="tab-content hidden">
+            <div>test howuedo</div>
+        </div>
+    </div>
+</div>
+<div class="tab">
+    <ul class="tab-menus">
+        <li class="tab-menu curr-menu">menu1</li>
+        <li class="tab-menu">menu2</li>
+    </ul>
+    <div class="tab-contents">
+        <div class="tab-content">
+            <ul>
+                <li>ctn1</li>
+                <li>ctn2</li>
+                <li>ctn3</li>
+            </ul>
+        </div>
+        <div class="tab-content hidden">
+            <h2>title</h2>
+            <p>content</p>
+        </div>
+    </div>
+</div>
+<script src="common/base.js"></script>
+<!--<script src="js/tab_function.js"></script>-->
+<!--用面向对象的方式重写tab选项卡-->
+<script src="js/tab_object.js"></script>
+</body>
+</html>

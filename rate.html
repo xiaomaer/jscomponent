@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对某项进行评分</title>
+    <style>
+        .item{
+            width: 200px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="item">
+    <h2>我的饭店</h2>
+
+    <p>卫生：</p>
+
+    <p class="J-rate">
+        <img src="img/star.png" title="差"/>
+        <img src="img/star.png" title="一般"/>
+        <img src="img/star.png" title="好"/>
+        <img src="img/star.png" title="较好"/>
+        <img src="img/star.png" title="很好"/>
+    </p>
+
+    <p>味道：</p>
+
+    <p class="J-rate">
+        <img src="img/star.png" title="差"/>
+        <img src="img/star.png" title="一般"/>
+        <img src="img/star.png" title="好"/>
+        <img src="img/star.png" title="较好"/>
+        <img src="img/star.png" title="很好"/>
+    </p>
+
+    <p>价格：</p>
+
+    <p class="J-rate">
+        <img src="img/star.png" title="差"/>
+        <img src="img/star.png" title="一般"/>
+        <img src="img/star.png" title="好"/>
+        <img src="img/star.png" title="较好"/>
+        <img src="img/star.png" title="很好"/>
+    </p>
+</div>
+<script src="common/base.js"></script>
+<!--<script src="js/rate.js"></script>-->
+<!--使用事件冒泡优化评分-->
+<script src="js/rate-Bubble.js"></script>
+</body>
+</html>
