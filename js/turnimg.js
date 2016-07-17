@@ -1,9 +1,9 @@
 /**
  * Created by MMY on 2015/11/27.
  */
-var doc = document;
-//自写JQ animate()实现无缝动画轮播图。
+ //自写JQ animate()实现无缝动画轮播图。
 //注意：结合transition实现图片切换动画时无法实现无缝轮播图
+var doc = document;
 var horse = function () {
     var imgslist = doc.getElementById("imgs"),
         imgs = imgslist.getElementsByTagName("li"),
@@ -36,14 +36,13 @@ var horse = function () {
 
     //动画切换下一张图片
     function nextImg() {
+         circles[j].className = "circle";
         if (varyleft <= totalwidth) {//显示最后一张时，瞬间切换到第二张
             imgslist.style.left = -imgwidth + "px";
             varyleft = -imgwidth;
-            circles[j].className = "circle";
             j++;
         }
         else {
-            circles[j].className = "circle";
             j++;
             if (j == 4) {
                 j = 0;
@@ -56,14 +55,13 @@ var horse = function () {
 
     //动画切换上一张图片
     function prevImg() {
+         circles[j].className = "circle";
         if (varyleft >= -imgwidth) {
             imgslist.style.left = totalwidth + "px";
             varyleft = totalwidth;
-            circles[j].className = "circle";
             j = 3;
         }
         else {
-            circles[j].className = "circle";
             j--;
             if (j < 0) {
                 j = 3;

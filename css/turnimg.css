@@ -14,7 +14,7 @@
     position: absolute;
     left: -660px;
 }
-
+/*底部圆点*/
 #imgs li {
     float: left;
 }
@@ -45,7 +45,7 @@
 .currimg {
     background-color: white;
 }
-
+/*图片上方的左右箭头*/
 .arr {
     width: 40px;
     height: 40px;
